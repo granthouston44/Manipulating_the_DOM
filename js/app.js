@@ -23,6 +23,17 @@ const handleFormSubmit = function(event){
     const vapourListItem = document.createElement('li');
     vapourListItem.classList.add('vapour-list-item');
 
-    vapourListItem.textContent = `Title: ${this.title.value}, Publisher: ${this.publisher.value}, Platform: ${this.platform.value}`
+    const title = document.createElement('h2');
+    title.textContent = form.title.value;
+    vapourListItem.appendChild(title);
+
+    const publisher = document.createElement('h3');
+    publisher.textContent = form.title.value;
+    vapourListItem.appendChild(publisher);
+
+    const platform = document.createElement('p');
+    platform.textContent = form.title.value;
+    vapourListItem.appendChild(platform);
+
     return vapourListItem;
   }
