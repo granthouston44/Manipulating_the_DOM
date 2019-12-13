@@ -2,9 +2,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const newItemForm = document.querySelector('#new-item-form');
   newItemForm.addEventListener('submit', handleFormSubmit);
 
-  // const deleteAllButton = document.querySelector('#delete-all');
-  // deleteAllButton.addEventListener('click', handleDeleteAllButton);
-  //
+  const deleteAllButton = document.querySelector('#button-all');
+  deleteAllButton.addEventListener('click', handleDeleteAllButton);
+
   // const deleteItemButton = deleteItemButton.addEventListener('click', handleDeleteItemButton);
 
 });
@@ -36,4 +36,9 @@ const handleFormSubmit = function(event){
     vapourListItem.appendChild(platform);
 
     return vapourListItem;
+  }
+
+  const handleDeleteAllButton = function (event){
+    const vapourList = document.querySelector('#vapour-list');
+    vapourList.innerHTML = '';
   }
