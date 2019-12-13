@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Vapour Wishlist</title>
-    <script src="js/app.js" charset="utf-8"></script>
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
-    <h1 id="heading">Vapour Wishlist!</h1>
-      <h2 id="sub-heading">Like steam, but made of vapour...</h2>
-
-      
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Vapour Wishlist</title>
+  <script src="js/app.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <h1 id="heading">Vapour Wishlist!</h1>
+  <h2 id="sub-heading">Like steam, but made of vapour...</h2>
+  <form id="new-item-form">
+    <div id= "form-wrapper">
+      <div class="form-item">
+        <label for="title" class="form-item-label">Title</label>
+        <input type="text" id="title" required/>
+      </div>
+      <div class="form-item">
+        <label for="publisher" class="form-item-label">Publisher</label>
+        <input type="text" id="publisher" required/>
+      </div>
+      <div class="form-item">
+        <label for="platform" class="form-item-label">Platform</label>
+        <input type="select" id="platform" required/>
+      </div>
+    </div>
+    <input type="submit" value="save"/>
+  </form>
+</body>
 </html>
